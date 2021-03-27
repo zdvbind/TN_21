@@ -31,18 +31,12 @@ class Train
   end
 
   def next_station
-    # if @current_station != @route.end_station
-    #   @route.station_list[@route.station_list.index(@current_station) + 1]
-    # end
     return unless @current_station != @route.end_station
 
     @route.station_list[@route.station_list.index(@current_station) + 1]
   end
 
   def previous_station
-    # if @current_station != @route.first_station
-    #   @route.station_list[@route.station_list.index(@current_station) - 1]
-    # end
     return unless @current_station != @route.first_station
 
     @route.station_list[@route.station_list.index(@current_station) - 1]
