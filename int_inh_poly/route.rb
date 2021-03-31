@@ -17,7 +17,7 @@ class Route
   end
 
   def del_station(station)
-    return unless station != @station_list.first && station != @station_list.last && station_list.include?(station)
+    return unless station != @station_list.first && station != @station_list.last
 
     @station_list.delete(station)
   end
