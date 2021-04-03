@@ -93,6 +93,6 @@ class Train
 
   def validate!
     raise ArgumentError, 'У номера невалидный формат' unless @number =~ NUMBER
-    raise ArgumentError, 'Тип поезда может быть тольк :cargo или :passenger' unless TRAIN_TYPES.include?(@type)
+    raise ArgumentError, 'Тип поезда может быть только :cargo или :passenger' unless TRAIN_TYPES.include?(@type)
   end
 end
