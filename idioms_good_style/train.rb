@@ -102,7 +102,7 @@ class Train
   end
 
   def validate!
-    raise ArgumentError, 'The number does not have valid format' unless @number =~ NUMBER
+    raise ArgumentError, 'The number does not have a valid format' unless @number =~ NUMBER
     raise ArgumentError, 'Type of train can be only :cargo or :passenger' unless TRAIN_TYPES.include?(@type)
   end
 end
