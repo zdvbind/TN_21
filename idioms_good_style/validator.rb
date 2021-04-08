@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Validator
   def valid?
     validate!

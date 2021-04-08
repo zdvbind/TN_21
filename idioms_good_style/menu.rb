@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Menu
   def show_main_menu
     puts "\nWhat do you want ? Choose the number \n"
